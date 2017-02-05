@@ -43,7 +43,7 @@ a {
 .hbc-logo img {
 	max-height: 120px;
 	/*float: left;*/
-	animation-delay: 2s;
+	animation-delay: 1s;
 	margin-left: auto;
 	margin-right: auto;
 	display: block;
