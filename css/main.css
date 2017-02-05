@@ -1,0 +1,444 @@
+/* Extra small devices (phones, less than 768px) */
+a {
+	color: white;
+}
+
+.navbar-default {
+	background: black;
+	background-image: url("../img/background.jpg");
+	/*border-color: #999;*/
+	background-color: black;
+	border-color: black;
+	border-radius: 0px;
+	background-position: center;
+	/*background-size: auto 100%;*/
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+}
+
+.background-black {
+	background-color: black;
+}
+
+.navbar {
+	min-height: 275px;
+	font-family: 'Roboto';
+	text-transform: uppercase;
+}
+
+/*HBC LOGO*/
+.hbc-logo {
+	width: 280px;
+	height: auto;
+	margin: 0 auto;
+    padding: 10px;
+    position: relative;
+	margin-top: 10px;
+	font-family: "Roboto";
+	text-transform: uppercase;
+	color: white;
+}
+
+.hbc-logo img {
+	max-height: 120px;
+	/*float: left;*/
+
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+
+}
+
+.hbc-logo .hbc-text {
+	margin-top: 20px;
+	/*text-align: right;*/
+	font-size: 24px;
+
+}
+
+/*MAIN PAGE MIDDLE SECTION*/
+body h1, h2, h3 {
+	font-family: 'Roboto';
+	font-weight: bold;
+}
+
+body p {
+	font-family: 'Monda';
+}
+
+main {
+	margin-left: 2%;
+	margin-right: 2%;
+	text-align: center;
+}
+
+.video-section {
+	margin: 5%;
+	margin-bottom: 100px;
+}
+
+.club-mission {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	margin-right: 5%;
+	margin-left: 5%;
+}
+
+/*FOOTER*/
+.footer-section {
+	height: 100px;
+	text-align: center;
+	color: grey;
+	background-color: black;
+}
+
+.footer-section p {
+	padding-top: 50px;
+}
+
+/*MEMBERS PAGE*/
+	.members-main {
+		margin: auto;
+		align-content: center;
+		max-width: 620px;
+	}
+
+	#members {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		text-align: center;
+	}
+
+	.member-img {
+		width: 99%;
+		height: auto;
+	}
+
+	.member-card {
+		display: inline-block;
+		position: relative;
+		width: 40%;
+		height: auto;
+		margin: 5px;
+	}
+
+	.member-name {
+		background: rgba(255,255,255,0.9);
+		color: black;
+		display: table;
+		height: auto;
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		opacity: 0;
+		-webkit-transition: opacity 500ms;
+		-moz-transition: opacity 500ms;
+		-o-transition: opacity 500ms;
+		transition: opacity 500ms;
+		font-size: 20px;
+		padding-top: 25%;
+		padding-bottom: 60%;
+	}
+
+	.member-position {
+		font-size: 15px;
+		color: grey;
+	}
+
+	.member-description {
+		display: none;
+	}
+
+	.member-card:hover p {
+		opacity: 1;
+	}	
+
+
+/*RETURN TO TOP*/
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+	z-index: 1000;
+}
+
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#return-to-top:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+
+	.navbar-default {
+		/*background: #999;*/
+		border-color: black;
+		border-radius: 0px;
+		background-position: center;
+		/*background-size: auto 100%;*/
+		background-repeat: no-repeat;
+		background-size: cover;
+
+	}
+
+	nav ul li {
+		display: inline-block;
+		list-style-type: none;
+		/*padding: 20px 15px;*/
+		color: white;
+	}
+
+	.navbar {
+		min-height: 200px;
+	}
+
+	.navbar-nav {
+		padding-top: 20px;
+		padding-right: 30px;
+		font-size: 15px;
+		
+	}
+
+	.nav-main {
+		min-height: 500px;
+	}
+
+	.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+		background-color: transparent;
+		color: white;
+	} 
+
+	.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+		color: white;
+	}
+	
+	.navbar-nav > li > a {
+		padding-bottom: 5px;
+		padding-top: 5px;
+		transition: color 0.5s ease;
+	}
+
+/*HBC LOGO*/
+	.hbc-logo {
+		width: 400px;
+		height: auto;
+		margin: 0 auto;
+    	padding: 10px;
+    	position: relative;
+		margin-top: 75px;
+	}
+
+	.hbc-logo img {
+		max-height: 200px;
+		/*float: left;*/
+	}
+
+	.hbc-logo .hbc-text {
+		margin-top: 20px;
+		/*text-align: right;*/
+		font-size: 36px;
+	}
+
+	.hbc-small {
+		width: 280px;
+		height: auto;
+		margin: 0 auto;
+    	padding: 10px;
+    	position: relative;
+	}
+
+	.hbc-small img {
+		max-height: 130px;
+		/*float: left;*/
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+	}
+
+	.hbc-small .hbc-text {
+		margin-top: 9px;
+		/*text-align: right;*/
+		font-size: 24px;
+	}
+
+/*MAIN PAGE MIDDLE SECTION*/
+
+	main {
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+
+	.video-container {
+		max-width: 700px;
+		margin: auto;
+	}
+
+	.video-section {
+		/*max-width: 700px;
+		height: auto;*/
+		/*margin: auto 0;*/
+		/*margin: 0;*/
+		margin-bottom: 250px;
+	}
+
+	.club-mission {
+		margin-top: 100px;
+		margin-bottom: 40px;
+	}
+
+/*MEMBERS PAGE*/
+	.members-main {
+		margin: auto;
+		align-content: center;
+		max-width: 1000px;
+	}
+
+	#members {
+		align-content: center;
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		text-align: center;
+	}
+
+	.member-img {
+		width: 273px;
+		height: auto;
+	}
+
+	.member-card {
+		display: inline-block;
+		position: relative;
+		width: 275px;
+		height: auto;
+		margin: 10px;
+		/*-webkit-animation-duration: 3s;
+    	-webkit-animation-delay: 1s;*/
+	}
+
+	.member-name {
+		background: rgba(255,255,255,0.9);
+		color: black;
+		display: table;
+		height: 275px;
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: 275px;
+		opacity: 0;
+		-webkit-transition: opacity 500ms;
+		-moz-transition: opacity 500ms;
+		-o-transition: opacity 500ms;
+		transition: opacity 500ms;
+	}
+
+	.member-description {
+		color: black;
+		display: table;
+		height: 275px;
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: 275px;
+		opacity: 0;
+		-webkit-transition: opacity 500ms;
+		-moz-transition: opacity 500ms;
+		-o-transition: opacity 500ms;
+		transition: opacity 500ms;
+	}
+
+	.member-name {
+		font-size: 20px;
+		padding-top: 50px;
+	}
+
+	.member-position {
+		font-size: 15px;
+		color: grey;
+	}
+
+	.member-description {
+		padding-top: 110px;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+
+	.member-card:hover p {
+		opacity: 1;
+	}
+
+/*CONTACT FORM	*/
+	.contact-form {
+		align-content: center;
+	}
+
+	.name-last {
+		display:inline-block;
+		width: 190px;
+		align-self: baseline;
+	}
+
+	#form-message {
+		
+	}
+
+	.mail-message {
+		display:inline-block;
+	}
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {  
+
+	
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+
+/*MAIN PAGE MIDDLE SECTION*/
+	main {
+		margin-left: 15%;
+		margin-right: 15%;
+	}
+
+	
+
+}
+ 
