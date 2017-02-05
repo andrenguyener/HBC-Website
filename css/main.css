@@ -91,9 +91,23 @@ main {
 	text-align: center;
 	color: grey;
 	background-color: black;
-	position: absolute; 
+	position: relative; 
     left: 0 ; right: 0; bottom: 0; 
+	flex: 0 0 auto;
+}
 
+html, body {
+	min-height: 100%;
+}
+
+body {
+min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.test {
+	flex: 1;
 }
 
 .footer-section p {
@@ -445,3 +459,8 @@ main {
 
 }
  
+@media (min-height: 1500px) {  
+	.footer-section {
+		position: absolute;
+	}
+}
