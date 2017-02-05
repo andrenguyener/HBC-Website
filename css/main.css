@@ -91,6 +91,9 @@ main {
 	text-align: center;
 	color: grey;
 	background-color: black;
+	position: absolute; 
+    left: 0 ; right: 0; bottom: 0; 
+
 }
 
 .footer-section p {
