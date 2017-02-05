@@ -14,7 +14,7 @@ a {
 	/*background-size: auto 100%;*/
 	background-repeat: no-repeat;
 	background-size: cover;
-	
+	animation-duration: 1s;
 }
 
 .background-black {
@@ -54,7 +54,7 @@ a {
 	margin-top: 20px;
 	/*text-align: right;*/
 	font-size: 24px;
-
+	animation-delay: 1s;
 }
 
 /*MAIN PAGE MIDDLE SECTION*/
