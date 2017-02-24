@@ -7,6 +7,7 @@ var membersList = document.querySelector("#members");
 
 
 
+
     render();
     // window.sr = ScrollReveal({ duration: 3000, delay: 1000 });
     // sr.reveal('.member-card', 100);
@@ -18,12 +19,35 @@ var membersList = document.querySelector("#members");
                     'transform' : 'translate(0px, -'+ wScroll /8 + '%)'
                 });
 
-                $('.nav').css({
-                    'transform' : 'translate(0px, -'+ wScroll /8 + '%)'
-                });
+            //     $('.nav').css({
+            //         'transform' : 'translate(0px, -'+ wScroll /8 + '%)'
+            //     });
             }
+            $(window).scroll(function() {
+                if($(document).scrollTop() > 15) {
+                    $('.nav').addClass('shrink');
+                }
+                else {
+                    $('.nav').removeClass('shrink');
+                }
+            });
         });
 
+
+
+
+
+var lastScrollTop = 0;
+
+window.addEventListener("scroll", function(){  
+   var st = window.pageYOffset || document.documentElement.scrollTop;  
+   if (st > lastScrollTop){
+       $(".navbar-nav").addClass("nav-hide");
+   } else {
+       $(".navbar-nav").removeClass("nav-hide");
+   }
+   lastScrollTop = st;
+}, false);
     
 
     //scroll reveal thingy
@@ -70,9 +94,12 @@ function render() {
 
 
 
-
-
-
+jQuery(function($){
+    $('.navbar-toggle').click(function(){
+    $('.navbar-collapse').toggleClass('right');
+    $('.navbar-toggle').toggleClass('indexcity');
+    });
+});
 
 
 

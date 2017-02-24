@@ -16,7 +16,7 @@ a {
 	background-repeat: no-repeat;
 	background-size: cover;
 	animation-duration: .5s;
-
+	
 }
 
 .background-black {
@@ -24,44 +24,53 @@ a {
 }
 
 .navbar {
-	height: 275px;
+	/*height: 275px;*/
 	font-family: 'Lato','Roboto';
 	text-transform: uppercase;
 	letter-spacing: 2px;
+	height: 100vh;
 }
+
+.nav>li>a {
+	margin-left: 15px;
+}
+
 
 /*HBC LOGO*/
 .hbc-logo {
-	width: 280px;
+	/*width: 50%;*/
 	height: auto;
 	margin: 0 auto;
-    padding: 10px;
+    padding: 2em;
     position: relative;
-	margin-top: 10px;
+	margin-top: 15%;
 	font-family: 'Lato', "Roboto";
 	text-transform: uppercase;
 	color: white;
-	
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
 }
 
 .hbc-logo img {
-	max-height: 120px;
+	max-height: 20em;
 	/*float: left;*/
 	animation-delay: 1s;
 	margin-left: auto;
 	margin-right: auto;
 	display: block;
-
+	/*width: 100%;*/
 }
 
 .hbc-logo .hbc-text {
 	margin-top: 0;
 	/*text-align: right;*/
-	font-size: 48px;
+	font-size: 35px;
 	animation-delay: 1s;
 	letter-spacing: 2px;
 	width: auto;
 	font-weight: 900;
+	text-align: center;
 }
 
 .hbc-text p {
@@ -157,18 +166,25 @@ body {
 	}
 
 	#members {
+		align-content: center;
 		list-style-type: none;
 		margin: 0;
 		padding: 0;
 		text-align: center;
 	}
 
+	.member-card img {
+		flex-shrink: 0;
+   		max-width: 100%;
+    	/*max-height: 100%;*/
+	}
+
 
 	.member-card {
 		display: inline-block;
 		position: relative;
-		max-width: 40%;
-		height: auto;
+		max-width: 45%;
+		/*height: 40%;*/
 		margin: 5px;
 		transform: translateY(20px);
 		/*opacity: 0;*/
@@ -227,8 +243,8 @@ body {
 /*RETURN TO TOP*/
 #return-to-top {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 1%;
+    right: 1%;
     background: rgb(0, 0, 0);
     background: rgba(0, 0, 0, 0.7);
     width: 50px;
@@ -276,6 +292,8 @@ body {
 	margin-left: 25%;
 	align-content: center;
 	font-size: 50%;
+	position: relative;
+		z-index: -1;
 }
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -312,23 +330,36 @@ body {
 	}
 
 	.navbar {
-		min-height: 200px;
+		/*min-height: 200px;*/
+		border: 0px;
 	}
 
 	.navbar-nav {
-		padding-top: 20px;
+		padding-top: 10px;
+		padding-bottom: 10px;
 		padding-right: 30px;
-		font-size: 14px;
-		
+		margin-left: 20px;
+		font-size: 1em;
+		position:fixed;
+		display: block;
+  		z-index:100000000 !important;
+		width: 100%;
+		margin: 0px;
+		display: flex;
+		justify-content: flex-end;
+		transition: all ease .5s;
+		top: 0;
 	}
 
 	.nav-main {
-		height: 500px;
+		/*height: 500px;*/
+		height: 100vh;
 	}
 
 	.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
 		background-color: transparent;
 		color: white;
+		
 	} 
 
 	.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
@@ -341,26 +372,37 @@ body {
 		transition: color 0.5s ease;
 	}
 
+	.nav.shrink {
+		background-color: rgba(0, 0, 0, 0.7);
+		transition: all ease .5s;
+
+	}
+
+	.nav-hide {
+		top: -50px;
+		transition: all ease .5s;
+	}
+
 /*HBC LOGO*/
 	.hbc-logo {
-		width: 500px;
+		width: 50%;
 		height: auto;
 		margin: 0 auto;
-    	padding: 10px;
+    	/*padding: 10px;*/
     	position: relative;
-		margin-top: 75px;
+		margin-top: 5%;
 		
 	}
 
 	.hbc-logo img {
-		max-height: 200px;
+		max-height: 20em;
 		/*float: left;*/
 	}
 
 	.hbc-logo .hbc-text {
 		margin-top: 0px;
 		/*text-align: right;*/
-		font-size: 36px;
+		font-size: 3em;
 		text-align: center;
 	}
 
@@ -389,16 +431,21 @@ body {
 /*MAIN PAGE MIDDLE SECTION*/
 
 	main {
-		margin-left: 5%;
-		margin-right: 5%;
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 1100px;
+		
 	}
 
 /*CHANGE VIDEO SIZE HERE*/
 	.video-container {
 		max-width: 700px;
 		margin: auto;
-		margin-left: 10%;
-		margin-right: 10%;
+		/*margin-left: 10%;
+		margin-right: 10%;*/
+		/*display: flex;
+		justify-content: center;*/
+		
 	}
 
 	.video-section {
@@ -406,7 +453,9 @@ body {
 		height: auto;*/
 		/*margin: auto 0;*/
 		/*margin: 0;*/
-		margin-bottom: 250px;
+		/*margin-bottom: 250px;*/
+		position: relative;
+		z-index: -1;
 	}
 
 	.club-mission {
@@ -419,6 +468,8 @@ body {
 		margin: auto;
 		align-content: center;
 		max-width: 1000px;
+		position: relative;
+		z-index: -1;
 	}
 
 	#members {
@@ -447,7 +498,8 @@ body {
 		width: 275px;
 		height: 275px;
 		margin: 10px;
-	
+	position: relative;
+		z-index: -1;
 	}
 
 
@@ -519,6 +571,8 @@ body {
 		display:inline-block;
 	}
 
+
+
 }
 
 /* Medium devices (desktops, 992px and up) */
@@ -536,8 +590,51 @@ body {
 		margin-right: 20%;*/
 	}
 
+/*HBC LOGO*/
+	.hbc-logo {
+		width: 50%;
+		height: auto;
+		margin: 0 auto;
+    	/*padding: 10px;*/
+    	position: relative;
+		margin-top: 5%;
+		
+	}
+
+	.hbc-logo img {
+		max-height: 20em;
+		/*float: left;*/
+	}
+
+	.hbc-logo .hbc-text {
+		margin-top: 0px;
+		/*text-align: right;*/
+		font-size: 3em;
+		text-align: center;
+	}
+
 	
 
+}
+
+@media (min-height: 1000px) {
+	.navbar-nav {
+		font-size: 1.5em;
+	}
+
+	.hbc-logo {
+		width: 70%;
+		margin-top: 27%;
+		
+	}
+
+	.hbc-logo img {
+		max-height: 25em;
+	}
+
+	.hbc-logo .hbc-text {
+		font-size: 5em;
+	}
 }
  
 @media (min-height: 1500px) {  
