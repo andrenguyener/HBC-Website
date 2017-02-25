@@ -4,23 +4,35 @@ a {
 }
 
 .navbar-default {
-	background: black;
+	border-color: transparent;
+	
+}
+header {
+	height: 100vh;
 	background-image: url("../img/background.jpg");
-	/*border-color: #999;*/
+		/*background: black;*/
+	
+	
 	background-color: black;
 	border-color: black;
 	border-radius: 0px;
 	background-position: bottom;
 	
-	/*background-size: auto 100%;*/
+
 	background-repeat: no-repeat;
 	background-size: cover;
 	animation-duration: .5s;
-	
+	overflow: hidden;
+		background-attachment: fixed;
+}
+
+.navbar-default {
+	background-color: transparent
 }
 
 .background-black {
-	background-color: black;
+	/*background-color: black;*/
+	
 }
 
 .navbar {
@@ -28,13 +40,141 @@ a {
 	font-family: 'Lato','Roboto';
 	text-transform: uppercase;
 	letter-spacing: 2px;
-	height: 100vh;
+	
 }
 
 .nav>li>a {
 	margin-left: 15px;
 }
 
+
+@media (max-width: 800px) {  
+	.navbar{
+		position: fixed;
+		margin-left: 80%;
+		z-index: 1000;
+	}
+	.navbar-header button {
+		/*position: fixed;*/
+		/*float: right;*/
+	}
+	/* Reset responsive Bootstrap elements */
+	#navbar2 .navbar-header {
+		float: none;
+		/*position: fixed;*/
+		/*display: flex;
+		justify-content: flex-end;*/
+	}
+
+	#navbar2 .navbar-toggle {
+		display: block;
+	}
+
+	#navbar2 .navbar-nav {
+		float: none !important;
+		margin: 7.5px -15px;
+	}
+
+	#navbar2 .navbar-nav .open .dropdown-menu {
+		/*position: static;*/
+		float: none;
+		background-color: transparent;
+		border: 0;
+		box-shadow: none;
+	}
+
+	#navbar2 .navbar-form {
+		float: none !important;
+		padding: 0;
+	}
+
+	#navbar2 .navbar-nav>li {
+		float: none;
+	}
+
+	/* Reposition elements affected by the sliding menu */
+	#wrapper {
+		position: relative;
+		right: 0;
+		transition: right 0.35s ease;
+	}
+
+	#navbar2 .navbar-collapse {
+		position: fixed;
+		top: 0;
+		right: -40%;
+		display: block;
+		width: 40%;
+		height: 100% !important;
+		/*max-height: 100%;*/
+		margin: 0;
+		background-color: #f8f8f8;
+		transition: right 0.35s ease;
+		z-index: 10000;
+	}
+
+	#navbar2 .navbar-collapse.collapsing {
+		transition: right 0.35s ease;
+	}
+
+	#navbar2 .navbar-collapse.in {
+		right: 0;
+		position: fixed;
+		z-index: 10000;
+	}
+
+	body.menu-slider.in {
+		overflow: hidden;
+	
+		
+	}
+
+	body.menu-slider #wrapper {
+		transition: right 0.35s ease;
+	
+
+	}
+
+	body.menu-slider.in #wrapper {
+		right: 40%;
+		/*opacity: .5;*/
+	}
+
+
+	.navbar-toggle {
+  border: none;
+  background: transparent !important;
+}
+.navbar-toggle:hover {
+  background: transparent !important;
+}
+.navbar-toggle .icon-bar {
+  width: 22px;
+  transition: all 0.2s;
+}
+.navbar-toggle .top-bar {
+  transform: rotate(45deg);
+  transform-origin: 10% 10%;
+}
+.navbar-toggle .middle-bar {
+  opacity: 0;
+}
+.navbar-toggle .bottom-bar {
+  transform: rotate(-45deg);
+  transform-origin: 10% 90%;
+}
+.navbar-toggle.collapsed .top-bar {
+  transform: rotate(0);
+}
+.navbar-toggle.collapsed .middle-bar {
+  opacity: 1;
+}
+.navbar-toggle.collapsed .bottom-bar {
+  transform: rotate(0);
+}
+
+
+}
 
 /*HBC LOGO*/
 .hbc-logo {
@@ -53,7 +193,7 @@ a {
 }
 
 .hbc-logo img {
-	max-height: 20em;
+	max-height: 15em;
 	/*float: left;*/
 	animation-delay: 1s;
 	margin-left: auto;
@@ -81,6 +221,8 @@ a {
 body h1, h2, h3 {
 	font-family: 'Lato','Roboto';
 	font-weight: bold;
+	position: relative;
+	z-index: -2;
 }
 
 body p {
@@ -193,6 +335,7 @@ body {
 		background: red;
 		justify-content: center;
 		align-items: center;
+		z-index: 0;
 	}
 
 	.member-card:hover  img{
@@ -293,7 +436,7 @@ body {
 	align-content: center;
 	font-size: 50%;
 	position: relative;
-		z-index: -1;
+		z-index: 0;
 }
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -318,8 +461,8 @@ body {
 @media (min-width: 768px) { 
 	/*PARALLAX HEADER*/
 	.navbar-default {
-		overflow: hidden;
-		background-attachment: fixed;
+		/*overflow: hidden;
+		background-attachment: fixed;*/
 	}
 
 	nav ul li {
@@ -327,11 +470,14 @@ body {
 		list-style-type: none;
 		/*padding: 20px 15px;*/
 		color: white;
+		
 	}
 
 	.navbar {
 		/*min-height: 200px;*/
 		border: 0px;
+		position:fixed;
+  		z-index:100000 !important;
 	}
 
 	.navbar-nav {
@@ -340,9 +486,10 @@ body {
 		padding-right: 30px;
 		margin-left: 20px;
 		font-size: 1em;
-		position:fixed;
+		
 		display: block;
-  		z-index:100000000 !important;
+		position:fixed;
+  		z-index:100000 !important;
 		width: 100%;
 		margin: 0px;
 		display: flex;
@@ -353,7 +500,7 @@ body {
 
 	.nav-main {
 		/*height: 500px;*/
-		height: 100vh;
+		/*height: 100vh;*/
 	}
 
 	.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
@@ -375,7 +522,6 @@ body {
 	.nav.shrink {
 		background-color: rgba(0, 0, 0, 0.7);
 		transition: all ease .5s;
-
 	}
 
 	.nav-hide {
@@ -455,7 +601,7 @@ body {
 		/*margin: 0;*/
 		/*margin-bottom: 250px;*/
 		position: relative;
-		z-index: -1;
+		z-index: 0;
 	}
 
 	.club-mission {
@@ -469,7 +615,7 @@ body {
 		align-content: center;
 		max-width: 1000px;
 		position: relative;
-		z-index: -1;
+		z-index: 0;
 	}
 
 	#members {
@@ -499,7 +645,7 @@ body {
 		height: 275px;
 		margin: 10px;
 	position: relative;
-		z-index: -1;
+		z-index: 0;
 	}
 
 

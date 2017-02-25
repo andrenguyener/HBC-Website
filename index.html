@@ -38,45 +38,49 @@
 <body>
 	<!-- Return to Top -->
 	<a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
-
-	<div class="test">
+	<div class="test2">
+	<div class="test" id="wrapper">
 		<header>
 			<a id="home" name="home"></a>
 
-			<div class="background-black">
-				<nav class="navbar navbar-default nav-main animated fadeIn">
+			
+				<nav id="navbar2" class="navbar navbar-default nav-main animated fadeIn" role="navigation">
 					<div class="container-fluid">
-						<!-- Brand and toggle get grouped for better mobile display -->
-
-
-
+				
 
 						<div class="navbar-header">
-							<button aria-expanded="false" class="navbar-toggle collapsed" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button"><span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button>
+							<button aria-expanded="false" class="navbar-toggle collapsed" data-target="#bs-example-navbar-collapse-2" data-toggle="collapse" type="button"><span class="sr-only">Toggle navigation</span>
+							 <span class="icon-bar top-bar"></span>
+							  <span class="icon-bar middle-bar"></span> 
+							  <span class="icon-bar bottom-bar"></span>
+							  </button>
 						</div>
-						<!-- Collect the nav links, forms, and other content for toggling -->
+				
 
 
-						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
 							<ul class="nav navbar-nav navbar-right">
-								<li class="active">
-									<a href="#home">Home <span class="sr-only">(current)</span></a>
+								<li id="home-nav">
+									<a href="#home">Home</a>
 								</li>
-
-
-								<li>
+								<li id="about-nav">
+									<a href="#about-anchor">About</a>
+								</li>
+								<li id="members-nav">
 									<a href="#members-anchor">Members</a>
 								</li>
 
-
-								<li>
-									<a href="#contact">Contact</a>
+								<li id="contact-nav">
+									<a href="#contact-anchor">Contact</a>
 								</li>
 							</ul>
 						</div>
-						<!-- /.navbar-collapse -->
+				
 					</div>
-					<!-- /.container-fluid -->
+	</nav>
+
+
+	
 
 
 					<div class="hbc-logo">
@@ -86,14 +90,14 @@
 							<p>Husky Break Club</p>
 						</div>
 					</div>
-				</nav>
-			</div>
-		</header>
+				
 
+		</header>
 
 		<main>
 			
 			<div class="about-section">
+				<a id="about-anchor" name="about-anchor"></a>
 				<div class="club-mission">
 					<h1>Mission</h1>
 
@@ -110,6 +114,7 @@
 			</div>
 
 			<div class="member-section">
+				<div class="members-section">
 				<a id="members-anchor" name="members-anchor"></a>
 				
 				<div class="club-mission">
@@ -121,11 +126,11 @@
 
 
 				<div id="members"></div>
-				
+				</div>
 			</div>
 
 			<div class="contact-section">
-				<a id="contact" name="contact"></a>
+				<a id="contact-anchor" name="contact-anchor"></a>
 
 				<div class="club-mission">
 					<h1>Contact</h1>
@@ -179,6 +184,7 @@
 			<p>University of Washington, Seattle</p>
 		</div>
 	</footer>
+	</div>
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
 	</script> 
@@ -190,9 +196,10 @@
 	</script> -->
 	<script src="js/jquery.lazyload.js">
 	</script> 
+	<!--<script src = "js/noframework.js/"></script>-->
 	<script src="js/app.js">
 	</script> 
-	<script>
+	<!--<script>
 	       // ===== Scroll to Top ==== 
 	       $(window).scroll(function() {
 	           if ($(this).scrollTop() >= 500) {        // If page is scrolled more than 50px
@@ -206,7 +213,7 @@
 	               scrollTop : 0                       // Scroll to top of body
 	           }, 500);
 	       });
-	</script> 
+	</script> -->
 	<script>
 	       $(document).ready(function() { 
 	           // prepare images to lazyload 

@@ -1,6 +1,6 @@
 "use strict";
 
-
+// import Waypoint  from 'waypoint';
 
 
 var membersList = document.querySelector("#members");
@@ -94,15 +94,135 @@ function render() {
 
 
 
-jQuery(function($){
-    $('.navbar-toggle').click(function(){
-    $('.navbar-collapse').toggleClass('right');
-    $('.navbar-toggle').toggleClass('indexcity');
-    });
+$(document).on('click', 'a', function(event){
+    event.preventDefault();
+
+    $('html, body').animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top - 50
+    }, 500);
 });
 
+(function ($) {
+
+    'use strict';
+// $('#wrapper').on('click', function(event){
+//    if ($(".menu-slider") && $(".in")){
+//      $('body').removeClass('menu-slider');
+//      $('body').removeClass('in');
+//      $('#bs-example-navbar-collapse-2').removeClass('in');
+// }
+// });
+    // Toggle classes in body for syncing sliding animation with other elements
+    $('#bs-example-navbar-collapse-2')
+        .on('show.bs.collapse', function (e) {
+
+                $('body').addClass('menu-slider');
+            console.log("opens menu");
+        })
+        .on('shown.bs.collapse', function (e) {
+
+                $('body').addClass('in');
+            console.log("body slides");
+        })
+        .on('hide.bs.collapse', function (e) {
+       
+                $('body').removeClass('menu-slider');
+          
+        })
+        .on('hidden.bs.collapse', function (e) {
+       
+                $('body').removeClass('in');
+      
+        });
+
+$('#bs-example-navbar-collapse-2').on('click','a', function(event){
+    if ($(".menu-slider") && $(".in")) {
+         $('body').removeClass('menu-slider');
+        $('body').removeClass('in');
+        $('#bs-example-navbar-collapse-2').removeClass('in');
+        $('.navbar-toggle').addClass("collapsed");
+    }
+});
+        
+})(jQuery);
 
 
+
+
+
+
+
+
+$.fn.inView = function(){
+    //Window Object
+    var win = $(window);
+    //Object to Check
+    var obj = $(this);
+    //the top Scroll Position in the page
+    var scrollPosition = win.scrollTop();
+    //the end of the visible area in the page, starting from the scroll position
+    var visibleArea = win.scrollTop() + win.height();
+    //the end of the object to check
+    var objEndPos = (obj.offset().top + obj.outerHeight());
+    return(visibleArea + 150 >= objEndPos && scrollPosition <= objEndPos ? true : false)
+};
+
+
+$(window).scroll(function(){
+    if($("header").inView()) {
+        $('#home-nav').addClass("active");
+        $('#about-nav').removeClass("active");
+    } else if ($(".about-section").inView()) {
+        $('#about-nav').addClass("active");
+        $('#home-nav').removeClass("active");
+        $('#members-nav').removeClass("active");
+    }  else if ($(".contact-section").inView()) {
+        $('#contact-nav').addClass("active");
+        $('#home-nav').removeClass("active");
+        $('#members-nav').removeClass("active");
+    }else if ($(".members-section").inView()) {
+        console.log("members in view");
+        $('#members-nav').addClass("active");
+        $('#about-nav').removeClass("active");
+        $('#contact-nav').removeClass("active");
+    } else if ($("#members-anchor").inView()) {
+        $('#members-nav').addClass("active");
+        $('#about-nav').removeClass("active");
+        $('#contact-nav').removeClass("active");
+    }
+    
+});
+
+// $(window).scroll(function(){
+//     if($(".about-section").inView()) {
+//             $('#about-nav').addClass("active");
+//         } else {
+//             $('#about-nav').removeClass("active");
+//         }
+// });
+
+// $(window).scroll(function(){
+//     if($(".members-section").inView()) {
+//             $('#members-nav').addClass("active");
+//         } else {
+//             $('#members-nav').removeClass("active");
+//         }
+// });
+
+// $(window).scroll(function(){
+//    if($(".contact-section").inView()) {
+//         $('#contact-nav').addClass("active");
+//     } else {
+//         $('#contact-nav').removeClass("active");
+//     }
+// });
+
+// var waypoint = new Waypoint({
+//   element: document.getElementById('about-section'),
+//   handler: function() {
+//     notify('Basic waypoint triggered')
+//   }
+// })
 
 
 
