@@ -141,7 +141,7 @@ header {
 	}
 
 
-	.navbar-toggle {
+.navbar-toggle {
   border: none;
   background: transparent !important;
 }
@@ -318,15 +318,17 @@ body {
 	.member-card img {
 		flex-shrink: 0;
    		max-width: 100%;
-    	/*max-height: 100%;*/
+
 	}
 
 
 	.member-card {
 		display: inline-block;
 		position: relative;
-		max-width: 45%;
+		width: 45%;
 		/*height: 40%;*/
+		height: 0;
+		padding-bottom: 45%;
 		margin: 5px;
 		transform: translateY(20px);
 		/*opacity: 0;*/
@@ -336,6 +338,7 @@ body {
 		justify-content: center;
 		align-items: center;
 		z-index: 0;
+	
 	}
 
 	.member-card:hover  img{
@@ -344,6 +347,8 @@ body {
 		filter: gray;
 	}
 
+
+	
 /*SCROLL REVEAL THINGY*/
 	.is-showing {
 		opacity:1;
@@ -381,6 +386,7 @@ body {
 	.member-card:hover p {
 		opacity: 1;
 	}	
+
 
 
 /*RETURN TO TOP*/
@@ -644,8 +650,9 @@ body {
 		width: 275px;
 		height: 275px;
 		margin: 10px;
-	position: relative;
+		position: relative;
 		z-index: 0;
+		padding-bottom: 0;
 	}
 
 

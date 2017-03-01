@@ -96,11 +96,21 @@ function render() {
 
 $(document).on('click', 'a', function(event){
     event.preventDefault();
-
-    $('html, body').animate({
+    if ($('#contact-anchor').attr('id') === $.attr(this, 'href')) {
+        console.log("test");
+        $('html, body').animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top + 1000
+        }, 500);
+    } else {
+        console.log("1test");
+        $('html, body').animate({
         scrollTop: $( $.attr(this, 'href') ).offset().top - 50
     }, 500);
+    }
+    
 });
+
+
 
 (function ($) {
 
@@ -172,23 +182,29 @@ $(window).scroll(function(){
     if($("header").inView()) {
         $('#home-nav').addClass("active");
         $('#about-nav').removeClass("active");
+        $('#members-nav').removeClass("active");
+        $('#contact-nav').removeClass("active");
     } else if ($(".about-section").inView()) {
         $('#about-nav').addClass("active");
         $('#home-nav').removeClass("active");
         $('#members-nav').removeClass("active");
+        $('#contact-nav').removeClass("active");
     }  else if ($(".contact-section").inView()) {
         $('#contact-nav').addClass("active");
         $('#home-nav').removeClass("active");
+        $('#about-nav').removeClass("active");
         $('#members-nav').removeClass("active");
     }else if ($(".members-section").inView()) {
         console.log("members in view");
         $('#members-nav').addClass("active");
         $('#about-nav').removeClass("active");
+        $('#home-nav').removeClass("active");
         $('#contact-nav').removeClass("active");
     } else if ($("#members-anchor").inView()) {
         $('#members-nav').addClass("active");
         $('#about-nav').removeClass("active");
         $('#contact-nav').removeClass("active");
+        $('#home-nav').removeClass("active");
     }
     
 });
