@@ -4,7 +4,7 @@
 
 
 var membersList = document.querySelector("#members");
-
+var pContainerHeight = $('header').height();
 
 
 
@@ -14,15 +14,34 @@ var membersList = document.querySelector("#members");
 
         $(window).scroll(function() {
         var wScroll = $(this).scrollTop();
+        
+
             if (window.innerWidth > 498) {
-                $('.hbc-logo').css({
-                    'transform' : 'translate(0px, -'+ wScroll /8 + '%)'
-                });
+                  if (wScroll <= pContainerHeight) {
+                    $('.hbc-logo').css({
+                        'transform' : 'translate(0px, -'+ wScroll /8 + '%)'
+                    });
+                  }
 
             //     $('.nav').css({
             //         'transform' : 'translate(0px, -'+ wScroll /8 + '%)'
             //     });
-            }
+            
+          
+                $('.block').css({
+                        'transform' : 'translate(0px, -'+ wScroll /30 + '%)'
+                });
+            
+                
+             
+                 $('.block2').css({
+                    'transform' : 'translate(0px, '+ wScroll /20 + '%)'
+                });
+            
+            // $('.block').css({
+            //         'transform' : 'translate(0px, -'+ wScroll /30 + '%)'
+            // });
+            
             $(window).scroll(function() {
                 if($(document).scrollTop() > 15) {
                     $('.nav').addClass('shrink');
@@ -31,6 +50,7 @@ var membersList = document.querySelector("#members");
                     $('.nav').removeClass('shrink');
                 }
             });
+            }
         });
 
 
