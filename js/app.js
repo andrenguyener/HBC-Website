@@ -61,6 +61,22 @@ var pContainerHeight = $('header').height();
         });
 
 
+
+
+
+
+
+
+$(".navbar-nav li a").mouseup(function(){
+    $(this).blur();
+})
+
+
+
+
+
+
+
 var header = $('.hbc-logo');
 var range = 200;
 
@@ -154,7 +170,7 @@ $(document).on('click', 'a', function(event){
         scrollTop: $( $.attr(this, 'href') ).offset().top - 50
     }, 500);
     
-    this.addClass("active");
+    // this.addClass("active");
 });
 
 
@@ -226,8 +242,13 @@ $.fn.inView = function(){
 
 
 $(window).scroll(function(){
-   
-    if ($(".about-section").inView()) {
+    if ($("header").inView()) {
+        $('#home-nav').addClass("active");
+        $('#about-nav').removeClass("active");
+        $('#members-nav').removeClass("active");
+        $('#contact-nav').removeClass("active");
+    }
+     else if ($(".about-section").inView()) {
         $('#about-nav').addClass("active");
         $('#home-nav').removeClass("active");
         $('#members-nav').removeClass("active");

@@ -46,7 +46,9 @@ header {
 }
 
 .nav>li>a {
-	margin-left: 15px;
+	margin-left: 18px;
+	/*margin-left: 5px;
+	margin-right: 5px;*/
 }
 
 .club-mission h1 {
@@ -57,7 +59,9 @@ header {
 
 
 @media (max-width: 768px) {
-	.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+
+
+	.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover {
 		/*background-color: purple;*/
 		color: purple;
 	}  
@@ -66,7 +70,7 @@ header {
 		margin-left: 80%;
 		/*margin-bottom: 80%;*/
 		z-index: 1000;
-		color: white;
+		
 	}
 	.navbar-header button {
 		/*position: fixed;*/
@@ -428,7 +432,7 @@ p {
 		font-weight: 300;
 	}
 
-	.member-card:hover img, .member-card:focus img{
+	.member-card:hover img, .member-card:focus img, .member-card:click img{
 		/*-webkit-filter: grayscale(1);
     	filter: grayscale(1);
 		filter: gray;*/
@@ -451,11 +455,11 @@ p {
 		opacity: .5;
 	}*/
 
-	.member-card img:hover .member-name, .member-card img:focus .member-name {
+	.member-card img:hover .member-name, .member-card img:focus .member-name, .member-card:click .member-name {
 		display: block;
 	}
 
-	.member-card img:hover .member-description, .member-card img:focus .member-description {
+	.member-card img:hover .member-description, .member-card img:focus .member-description, .member-card:click .member-description {
 		display: block;
 	}
 
@@ -784,9 +788,14 @@ p {
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 769px) { 
+		.nav #home-nav a {
+		display: none !important;
+	}
+
+
 
 	.header {
-		background-image: url("../img/background3.png");
+		background-image: url("../img/background2.png");
 	}
 
 	.block {
