@@ -89,8 +89,10 @@ window.addEventListener("scroll", function(){
    var st = window.pageYOffset || document.documentElement.scrollTop;  
    if (st > lastScrollTop){
        $(".navbar-nav").addClass("nav-hide");
+       $(".navbar-toggle").addClass("nav-hide");
    } else {
        $(".navbar-nav").removeClass("nav-hide");
+       $(".navbar-toggle").removeClass("nav-hide");
    }
    lastScrollTop = st;
 }, false);
@@ -146,18 +148,13 @@ function render() {
 
 $(document).on('click', 'a', function(event){
     event.preventDefault();
-    if ($('#contact-anchor').attr('id') === $.attr(this, 'href')) {
-        console.log("test");
-        $('html, body').animate({
-        scrollTop: $( $.attr(this, 'href') ).offset().top + 1000
-        }, 500);
-    } else {
+    
         console.log("1test");
         $('html, body').animate({
         scrollTop: $( $.attr(this, 'href') ).offset().top - 50
     }, 500);
-    }
     
+    this.addClass("active");
 });
 
 
@@ -229,12 +226,8 @@ $.fn.inView = function(){
 
 
 $(window).scroll(function(){
-    if($("header").inView()) {
-        $('#home-nav').addClass("active");
-        $('#about-nav').removeClass("active");
-        $('#members-nav').removeClass("active");
-        $('#contact-nav').removeClass("active");
-    } else if ($(".about-section").inView()) {
+   
+    if ($(".about-section").inView()) {
         $('#about-nav').addClass("active");
         $('#home-nav').removeClass("active");
         $('#members-nav').removeClass("active");
