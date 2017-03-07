@@ -432,7 +432,7 @@ p {
 		font-weight: 300;
 	}
 
-	.member-card:hover img, .member-card:focus img, .member-card:click img{
+	.member-card:hover img, .member-card:focus img {
 		/*-webkit-filter: grayscale(1);
     	filter: grayscale(1);
 		filter: gray;*/
@@ -794,7 +794,7 @@ p {
 
 
 
-	.header {
+	header {
 		background-image: url("../img/background2.png");
 	}
 
