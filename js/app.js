@@ -58,6 +58,9 @@ var pContainerHeight = $('header').height();
                 $('.about-section').css({
                     'opacity': (1 - (height - scrollTop) / height)
                 });
+                $('.arrow-down').css({
+                    'opacity': ((height - scrollTop*2) / (height))
+                });
         });
 
 
@@ -163,12 +166,15 @@ function render() {
 
 
 $(document).on('click', 'a', function(event){
-    event.preventDefault();
-    
-        console.log("1test");
+   
+    var hrefLink = $(this).attr("href");
+    if(!(hrefLink).includes(".com")) {
+        event.preventDefault();
         $('html, body').animate({
         scrollTop: $( $.attr(this, 'href') ).offset().top - 50
-    }, 500);
+        }, 500);
+    }
+    
     
     // this.addClass("active");
 });

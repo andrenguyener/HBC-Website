@@ -10,8 +10,10 @@ a {
 header {
 	height: 100vh;
 	background-image: url("../img/background3.png");
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
 		/*background: black;*/
-	
+	-o-background-size: cover;
 	
 	background-color: black;
 	border-color: black;
@@ -46,7 +48,7 @@ header {
 }
 
 .nav>li>a {
-	margin-left: 18px;
+	margin-left: 25px;
 	/*margin-left: 5px;
 	margin-right: 5px;*/
 }
@@ -57,6 +59,37 @@ header {
 	margin-top: 0px;
 }
 
+.arrow-down a {
+	color: #777;
+	transition: all ease-in-out .5s;
+}
+
+.arrow-down a:hover {
+	color: white;
+}
+
+.arrow-down {
+	/*color: white;*/
+	/*background-color: white;*/
+	
+	position: relative;
+	bottom: 15%;
+	/*z-index: 50;*/
+	display: flex;
+	justify-content: center;
+	-webkit-animation-name: up-down; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+    animation-name: up-down;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes up-down {
+	0% {bottom: 15%;}
+	50% {bottom: 18%;}
+	100% {bottom: 15%;}
+}
 
 @media (max-width: 768px) {
 
@@ -332,16 +365,26 @@ body {
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
-  height: 120px;
+  height: 160px;
   background-color: black;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .footer-section p {
 	/*padding-top: 50px;*/
+}
+
+.fa-facebook-official {
+	margin-bottom: 10px;
+	transition: all .3s ease-in-out;
+}
+
+.fa-facebook-official:hover {
+	color: #3b5998;
 }
 
 .about-section {
@@ -428,7 +471,7 @@ p {
 		margin-left: 5px;
 		margin-right: 5px;
 		font-family: 'Oswald';
-		text-transform: uppercase;
+		
 		font-weight: 300;
 	}
 
@@ -496,6 +539,7 @@ p {
 		font-weight: 300;
 		letter-spacing: 2px;
 		line-height: 1.2;
+		text-transform: uppercase;
 		    /*position:absolute;
 			top:0;
 			width:0;
@@ -532,7 +576,7 @@ p {
 	}
 
 	.member-description-padding {
-		padding-top: 90%;
+		padding-top: 85%;
 	}
 	
 
@@ -737,12 +781,12 @@ p {
 
 @media (min-width: 360px) {
 	.member-description {
-		padding-top: 83%;
+		padding-top: 79%;
 		font-size: 18px;
 	}
 
 	.member-description-padding {
-		padding-top: 89%;
+		padding-top: 87%;
 	}
 	.member-name {
 		font-size: 30px;
@@ -835,7 +879,7 @@ p {
 		padding-bottom: 10px;
 		/*padding-right: 30px;
 		margin-left: 20px;*/
-		font-size: 15px;
+		font-size: 20px;
 		
 		display: block;
 		position:fixed;
@@ -1021,15 +1065,15 @@ p {
 	.member-description {
 		
 		
-		font-size: 30px;
-		padding-top: 80%;
+		font-size: 25px;
+		padding-top: 85%;
 		padding-bottom: 10%;
 		letter-spacing: 1px;
 		/*text-transform: lowercase;*/
 	}
 
 	.member-description-padding {
-		padding-top: 85%;
+		padding-top: 91%;
 	}
 
 
@@ -1115,7 +1159,7 @@ p {
 	}
 
 	.hbc-logo img {
-		max-height: 20em;
+		max-height: 25em;
 		/*float: left;*/
 	}
 
