@@ -479,7 +479,7 @@ p {
 		font-weight: 300;
 	}
 
-	.member-card:hover img, .member-card:focus img,  .member-card:active img{
+     .member-card:click img{
 		/*-webkit-filter: grayscale(1);
     	filter: grayscale(1);
 		filter: gray;*/
@@ -504,11 +504,11 @@ p {
 		opacity: .5;
 	}*/
 
-	.member-card img:hover .member-name, .member-card img:focus .member-name, .member-card:click .member-name, .member-card:active .member-name  {
+	 .member-card:click .member-name {
 		display: block;
 	}
 
-	.member-card img:hover .member-description, .member-card img:focus .member-description, .member-card:click .member-description, .member-card:active .member-description {
+	 .member-card:click .member-description {
 		display: block;
 	}
 
@@ -597,7 +597,7 @@ p {
 		display: none;
 	}*/
 
-	.member-card:hover p, .member-card:focus p, .member-card:active p {
+	.member-card:click p {
 		opacity: 1;
 	}	
 
@@ -1105,6 +1105,27 @@ p {
 		padding-left: 5px;
 		padding-right: 5px;*/
 	}
+
+	.member-card:hover img, .member-card:focus img {
+		/*-webkit-filter: grayscale(1);
+    	filter: grayscale(1);
+		filter: gray;*/
+		opacity: .5;
+		
+	}
+
+
+		.member-card img:hover .member-name, .member-card img:focus .member-name {
+		display: block;
+	}
+
+	.member-card img:hover .member-description, .member-card img:focus .member-description {
+		display: block;
+	}
+
+		.member-card:hover p, .member-card:focus p {
+		opacity: 1;
+	}	
 
 /*CONTACT FORM	*/
 	.contact-form {
