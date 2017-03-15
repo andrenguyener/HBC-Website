@@ -149,6 +149,7 @@ function render() {
        var description = document.createElement("p");
        description.className = "member-description";
        img.src = memberInner.picture;
+       img.onclick = "";
        description.innerHTML = memberInner.position + "<br/>" + memberInner.description;
        if (description.innerHTML.length > 17) {
            description.className += " member-description-padding";
@@ -158,6 +159,7 @@ function render() {
        memberCard.appendChild(img);
        memberCard.appendChild(name);
        memberCard.appendChild(description);
+       memberCard.onclick = "";
        membersList.appendChild(memberCard);
    });
 }
