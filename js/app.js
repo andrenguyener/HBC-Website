@@ -159,9 +159,12 @@ function render() {
        memberCard.appendChild(img);
        memberCard.appendChild(name);
        memberCard.appendChild(description);
-       memberCard.onclick = "void(0)";
+       memberCard.addEventListener("click", testFunction, false);
        membersList.appendChild(memberCard);
    });
+   function testFunction(){
+    // alert('hi')
+}
 }
 
 
