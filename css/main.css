@@ -567,7 +567,7 @@ p {
 		-o-transition: opacity 500ms;
 		transition: opacity 500ms;
 		font-size: 15px;
-		padding-top: 80%;
+		padding-top: 75%;
 		padding-bottom: 10%;
 		background-image: url("../img/Slash (1).png");
 		background-position: center bottom;
@@ -577,7 +577,7 @@ p {
 	}
 
 	.member-description-padding {
-		padding-top: 85%;
+		padding-top: 80%;
 	}
 	
 
