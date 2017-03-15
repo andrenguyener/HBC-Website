@@ -18,7 +18,7 @@ header {
 	background-color: black;
 	border-color: black;
 	border-radius: 0px;
-	background-position: bottom;
+	background-position: center;
 	
 	/*display: flex;
 	align-items: center;*/
@@ -204,6 +204,7 @@ header {
 	height: 100%;
 	margin: 0 auto;
     padding: 2em;
+	padding-bottom: 20%;
     position: relative;
 	margin-top: auto;
 	margin-bottom: auto;
@@ -929,7 +930,7 @@ p {
     	/*padding: 10px;*/
     	/*position: relative;
 		margin-top: 5%;*/
-		
+		padding-bottom: 0;
 	}
 
 	.hbc-logo img {
