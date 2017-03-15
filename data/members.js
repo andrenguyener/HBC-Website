@@ -7,7 +7,7 @@ var MEMBERS = [
     {"name": "Mike Sithideth", "position": "", "description": "Class of 2017", "picture": "img/members/mike.jpg"},
     {"name": "Edwin Tablit", "position": "Vice President", "description": "Class of 2017", "picture": "img/members/edwin.jpg"},
     {"name": "Rodriguez Pham", "position": "Secretary", "description": "Class of 2017", "picture": "img/members/rodriguez.jpg"},
-    {"name": "Harry Shin", "position": "President", "description": "Class of 2019", "picture": "img/members/larrytest.jpg"},
+    {"name": "Harry Shin", "position": "President", "description": "Class of 2019", "picture": "img/members/larry.jpg"},
     {"name": "Andre Nguyen", "position": "Treasurer", "description": "Class of 2019", "picture": "img/members/andre.jpg"},
     {"name": "Joseph Yoon", "position": "Representative", "description": "Class of 2019", "picture": "img/members/joseph.jpg"},
     {"name": "Mahlan Oung", "position": "", "description": "Class of 2019", "picture": "img/members/mahlan.jpg"},
