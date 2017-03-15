@@ -149,7 +149,7 @@ function render() {
        var description = document.createElement("p");
        description.className = "member-description";
        img.src = memberInner.picture;
-       img.onclick = "";
+       img.onclick = "void(0)";
        description.innerHTML = memberInner.position + "<br/>" + memberInner.description;
        if (description.innerHTML.length > 17) {
            description.className += " member-description-padding";
@@ -159,7 +159,7 @@ function render() {
        memberCard.appendChild(img);
        memberCard.appendChild(name);
        memberCard.appendChild(description);
-       memberCard.onclick = "";
+       memberCard.onclick = "void(0)";
        membersList.appendChild(memberCard);
    });
 }
