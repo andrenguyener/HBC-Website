@@ -573,7 +573,13 @@ p {
 		background-position: center bottom;
 		background-repeat: no-repeat;
 		background-size: 50% 50%;
+		-o-background-size: 50% 50%;
+		-webkit-background-size: 50% 50%;
+   		 -moz-background-size: 50% 50%;
 		letter-spacing: 1px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 
 	.member-description-padding {
@@ -780,12 +786,15 @@ p {
 
 @media (min-width: 360px) {
 	.member-description {
-		/*padding-top: 75%;*/
+		/*padding-top: 85%;*/
 		font-size: 18px;
+		
 	}
 
+	
+
 	.member-description-padding {
-		/*padding-top: 81%;*/
+		padding-top: 80%;
 	}
 	.member-name {
 		font-size: 30px;

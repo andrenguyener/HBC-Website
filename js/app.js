@@ -149,11 +149,15 @@ function render() {
        var description = document.createElement("p");
        description.className = "member-description";
        img.src = memberInner.picture;
-       img.onclick = "void(0)";
-       description.innerHTML = memberInner.position + "<br/>" + memberInner.description;
-       if (description.innerHTML.length > 17) {
-           description.className += " member-description-padding";
+       if (memberInner.position.length > 1) {
+           description.innerHTML = memberInner.position + "<br/>" + memberInner.description;
+       } else {
+           description.innerHTML =  memberInner.description;
        }
+       
+    //    if (description.innerHTML.length > 17) {
+    //        description.className += " member-description-padding";
+    //    }
     //    description.appendChild(document.createElement("br"));
     //    name.appendChild(position);
        memberCard.appendChild(img);
