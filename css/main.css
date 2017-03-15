@@ -26,7 +26,7 @@ header {
 	background-size: cover;
 	animation-duration: .5s;
 	overflow: hidden;
-	background-attachment: fixed;
+	
 }
 
 .navbar-default {
@@ -59,38 +59,9 @@ header {
 	margin-top: 0px;
 }
 
-.arrow-down a {
-	color: #777;
-	transition: all ease-in-out .5s;
-}
-
-.arrow-down a:hover {
-	color: white;
-}
-
 .arrow-down {
-	/*color: white;*/
-	/*background-color: white;*/
-	
-	position: relative;
-	bottom: 15%;
-	/*z-index: 50;*/
-	display: flex;
-	justify-content: center;
-	-webkit-animation-name: up-down; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
-    -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
-    animation-name: up-down;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
+	display: none;
 }
-
-@-webkit-keyframes up-down {
-	0% {bottom: 15%;}
-	50% {bottom: 18%;}
-	100% {bottom: 15%;}
-}
-
 @media (max-width: 768px) {
 
 
@@ -531,7 +502,7 @@ p {
 		display: block;
 	}
 
-		.member-card:hover p, .member-card:focus p {
+	.member-card:hover p, .member-card:focus p {
 		opacity: 1;
 	}	
 
@@ -866,6 +837,7 @@ p {
 
 	header {
 		background-image: url("../img/background2.png");
+		background-attachment: fixed;
 	}
 
 	.block {
@@ -1124,26 +1096,7 @@ p {
 		padding-right: 5px;*/
 	}
 
-	.member-card:hover img, .member-card:focus img {
-		/*-webkit-filter: grayscale(1);
-    	filter: grayscale(1);
-		filter: gray;*/
-		opacity: .5;
-		
-	}
 
-
-	.member-card img:hover .member-name, .member-card img:focus .member-name {
-		display: block;
-	}
-
-	.member-card img:hover .member-description, .member-card img:focus .member-description {
-		display: block;
-	}
-
-		.member-card:hover p, .member-card:focus p {
-		opacity: 1;
-	}	
 
 /*CONTACT FORM	*/
 	.contact-form {
@@ -1176,6 +1129,39 @@ p {
 		margin-right: 30%;
 		margin-left: 30%;
 	}
+
+	
+.arrow-down a {
+	color: #777;
+	transition: all ease-in-out .5s;
+}
+
+.arrow-down a:hover {
+	color: white;
+}
+
+.arrow-down {
+	/*color: white;*/
+	/*background-color: white;*/
+	
+	position: relative;
+	bottom: 15%;
+	/*z-index: 50;*/
+	display: flex;
+	justify-content: center;
+	-webkit-animation-name: up-down; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+    animation-name: up-down;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes up-down {
+	0% {bottom: 15%;}
+	50% {bottom: 18%;}
+	100% {bottom: 15%;}
+}
 
 }
 
