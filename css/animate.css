@@ -1235,9 +1235,24 @@
   }
 }
 
+@keyframes fadeInTest {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: .25;
+  }
+}
+
 .fadeIn {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
+}
+
+.fadeInTest {
+  -webkit-animation-name: fadeInTest;
+  animation-name: fadeInTest;
 }
 
 @-webkit-keyframes fadeInDown {

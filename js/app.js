@@ -22,7 +22,26 @@ var pContainerHeight = $('header').height();
                         'transform' : 'translate(0px, -'+ wScroll /8 + '%)'
                     });
                   }
-
+                   if (window.innerWidth > 768) {
+                    if (wScroll <= pContainerHeight) {
+                        $('#husky-h').css({
+                            'transform' : 'translate(0px, '+ wScroll /8 + '%)'
+                        });
+                        $('#husky-u').css({
+                            'transform' : 'translate(0px, -'+ wScroll /8 + '%)'
+                        });
+                        $('#husky-s').css({
+                            'transform' : 'translate(0px, -'+ wScroll /4 + '%)'
+                        });
+                        $('#husky-k').css({
+                            'transform' : 'translate(0px, '+ wScroll /7 + '%)'
+                        });
+                        $('#husky-y').css({
+                            'transform' : 'translate(0px, -'+ wScroll /18 + '%)'
+                        });
+                    }
+                
+                    }
             //     $('.nav').css({
             //         'transform' : 'translate(0px, -'+ wScroll /8 + '%)'
             //     });
@@ -60,6 +79,9 @@ var pContainerHeight = $('header').height();
                 });
                 $('.arrow-down').css({
                     'opacity': ((height - scrollTop*2) / (height))
+                });
+                $('.husky-logo').css({
+                    'opacity': ((height - scrollTop) / (height))
                 });
         });
 
@@ -205,12 +227,12 @@ $(document).on('click', 'a', function(event){
         .on('show.bs.collapse', function (e) {
 
                 $('body').addClass('menu-slider');
-            console.log("opens menu");
+            
         })
         .on('shown.bs.collapse', function (e) {
 
                 $('body').addClass('in');
-            console.log("body slides");
+        
         })
         .on('hide.bs.collapse', function (e) {
        
@@ -274,7 +296,7 @@ $(window).scroll(function(){
         $('#about-nav').removeClass("active");
         $('#members-nav').removeClass("active");
     }else if ($(".members-section").inView()) {
-        console.log("members in view");
+       
         $('#members-nav').addClass("active");
         $('#about-nav').removeClass("active");
         $('#home-nav').removeClass("active");
