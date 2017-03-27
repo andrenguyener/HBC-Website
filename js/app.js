@@ -154,7 +154,25 @@ window.addEventListener("scroll", function(){
 
     // })
 
+if(navigator.userAgent.match(/Trident\/7\./)) { // if IE
+        $('body').on("mousewheel", function () {
+            // remove default behavior
+            event.preventDefault(); 
 
+            //scroll without smoothing
+            var wheelDelta = event.wheelDelta;
+            var currentScrollPosition = window.pageYOffset;
+            window.scrollTo(0, currentScrollPosition - wheelDelta);
+        });
+}
+// $('body').on("mousewheel", function () {
+//   event.preventDefault();
+
+//   var wheelDelta = event.wheelDelta;
+
+//   var currentScrollPosition = window.pageYOffset;
+//   window.scrollTo(0, currentScrollPosition - wheelDelta);
+// });
 
 function render() {
    MEMBERS.forEach(function(memberInner) {
@@ -165,9 +183,6 @@ function render() {
        var name = document.createElement("p");
        name.className = "member-name";
        name.textContent = memberInner.name;
-    //    var position = document.createElement("p");
-    //    position.textContent = memberInner.position;
-    //    position.className = "member-position";
        var description = document.createElement("p");
        description.className = "member-description";
        img.src = memberInner.picture;
@@ -176,12 +191,6 @@ function render() {
        } else {
            description.innerHTML =  memberInner.description;
        }
-       
-    //    if (description.innerHTML.length > 17) {
-    //        description.className += " member-description-padding";
-    //    }
-    //    description.appendChild(document.createElement("br"));
-    //    name.appendChild(position);
        memberCard.appendChild(img);
        memberCard.appendChild(name);
        memberCard.appendChild(description);

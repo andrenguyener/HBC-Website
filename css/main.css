@@ -12,45 +12,29 @@ header {
 	background-image: url("../img/background3.png");
 	-webkit-background-size: cover;
     -moz-background-size: cover;
-		/*background: black;*/
 	-o-background-size: cover;
-	
 	background-color: black;
 	border-color: black;
 	border-radius: 0px;
 	background-position: center;
-	
-	/*display: flex;
-	align-items: center;*/
 	background-repeat: no-repeat;
 	background-size: cover;
 	animation-duration: .5s;
 	overflow: hidden;
-	
 }
 
 .navbar-default {
 	background-color: transparent
 }
 
-.background-black {
-	/*background-color: black;*/
-	
-}
-
 .navbar {
-	/*height: 275px;*/
-	/*font-family: 'Lato','Roboto';*/
 	font-family: 'Oswald';
 	text-transform: uppercase;
 	letter-spacing: 2px;
-	
 }
 
 .nav>li>a {
 	margin-left: 25px;
-	/*margin-left: 5px;
-	margin-right: 5px;*/
 }
 
 .club-mission h1 {
@@ -62,30 +46,23 @@ header {
 .arrow-down {
 	display: none;
 }
+
 @media (max-width: 768px) {
 
 
 	.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover {
-		/*background-color: purple;*/
 		color: #8A2BE2;
 	}  
+
 	.navbar {
 		position: fixed;
 		margin-left: 80%;
-		/*margin-bottom: 80%;*/
 		z-index: 1000;
-		
 	}
-	.navbar-header button {
-		/*position: fixed;*/
-		/*float: right;*/
-	}
+
 	/* Reset responsive Bootstrap elements */
 	#navbar2 .navbar-header {
 		float: none;
-		/*position: fixed;*/
-		/*display: flex;
-		justify-content: flex-end;*/
 	}
 
 	#navbar2 .navbar-toggle {
@@ -98,7 +75,6 @@ header {
 	}
 
 	#navbar2 .navbar-nav .open .dropdown-menu {
-		/*position: static;*/
 		float: none;
 		background-color: transparent;
 		border: 0;
@@ -128,7 +104,6 @@ header {
 		display: block;
 		width: 40%;
 		height: 100% !important;
-		/*max-height: 100%;*/
 		margin: 0;
 		background-color: #f8f8f8;
 		transition: right 0.35s ease;
@@ -147,60 +122,62 @@ header {
 
 	body.menu-slider.in {
 		overflow: hidden;
-	
-		
 	}
 
 	body.menu-slider #wrapper {
 		transition: right 0.35s ease;
-	
-
 	}
 
 	body.menu-slider.in #wrapper {
 		right: 40%;
-		/*opacity: .5;*/
 	}
 
 
-.navbar-toggle {
-  border: none;
-  background: transparent !important;
-}
-.navbar-toggle:hover {
-  background: transparent !important;
-}
-.navbar-toggle .icon-bar {
-  width: 22px;
-  transition: all 0.2s;
-}
-.navbar-toggle .top-bar {
-  transform: rotate(45deg);
-  transform-origin: 10% 10%;
-}
-.navbar-toggle .middle-bar {
-  opacity: 0;
-}
-.navbar-toggle .bottom-bar {
-  transform: rotate(-45deg);
-  transform-origin: 10% 90%;
-}
-.navbar-toggle.collapsed .top-bar {
-  transform: rotate(0);
-}
-.navbar-toggle.collapsed .middle-bar {
-  opacity: 1;
-}
-.navbar-toggle.collapsed .bottom-bar {
-  transform: rotate(0);
-}
+	.navbar-toggle {
+	border: none;
+	background: transparent !important;
+	}
+
+	.navbar-toggle:hover {
+	background: transparent !important;
+	}
+
+	.navbar-toggle .icon-bar {
+	width: 22px;
+	transition: all 0.2s;
+	}
+
+	.navbar-toggle .top-bar {
+	transform: rotate(45deg);
+	transform-origin: 10% 10%;
+	}
+
+	.navbar-toggle .middle-bar {
+	opacity: 0;
+	}
+
+	.navbar-toggle .bottom-bar {
+	transform: rotate(-45deg);
+	transform-origin: 10% 90%;
+	}
+
+	.navbar-toggle.collapsed .top-bar {
+	transform: rotate(0);
+	}
+
+	.navbar-toggle.collapsed .middle-bar {
+	opacity: 1;
+	}
+
+	.navbar-toggle.collapsed .bottom-bar {
+	transform: rotate(0);
+	}
 
 
 }
 
 /*HBC LOGO*/
 .hbc-logo {
-	/*width: 50%;*/
 	height: 100%;
 	margin: 0 auto;
     padding: 2em;
@@ -208,8 +185,6 @@ header {
     position: relative;
 	margin-top: auto;
 	margin-bottom: auto;
-
-
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -218,19 +193,16 @@ header {
 
 .hbc-logo img {
 	max-height: 15em;
-	/*float: left;*/
 	animation-delay: 1s;
 	margin-left: auto;
 	margin-right: auto;
 	display: block;
-	/*width: 100%;*/
 }
 
 
 
 /*MAIN PAGE MIDDLE SECTION*/
 body h1, h2, h3 {
-	/*font-family: 'Lato','Roboto';*/
 	font-family: 'Oswald';
 	font-weight: bold;
 	position: relative;
@@ -238,7 +210,6 @@ body h1, h2, h3 {
 }
 
 body p {
-	/*font-family: 'Monda';*/
 	font-family: 'Oswald';
 	color: #FFF;
 	font-size: 20px;
@@ -255,21 +226,20 @@ h1 {
 }
 
 .video-section {
-	/*margin: 5%;*/
 	margin-bottom: 100px;
 }
 
 .section-heading {
-	/*border-bottom: 2px solid #777;*/
-	/*border-top: 2px solid #777;*/
 	margin-bottom: 50px;
 }
+
 h1 {
   display: flex;
   flex-direction: row;
   justify-content: center;
   text-align: center;
 }
+
 h1:before, h1:after {
   background-color: #8A2BE2;
   content: '\a0';
@@ -278,16 +248,16 @@ h1:before, h1:after {
   position: relative;
   top: 0.5em;
 }
+
 h1:before {
   margin-right:10px;
 }
+
 h1:after {
   margin-left:10px;
 }
 
 .club-mission {
-	/*margin-top: 50px;
-	margin-bottom: 50px;*/
 	margin-right: 5%;
 	margin-left: 5%;
 	margin-bottom: 50px;
@@ -298,27 +268,6 @@ h1:after {
 footer {
 	margin-top: 100px;
 }
-/*.footer-section {
-	height: 100px;
-	text-align: center;
-	color: grey;
-	background-color: black;
-	position: relative; 
-    left: 0 ; right: 0; bottom: 0; 
-	flex: 0 0 auto;
-}*/
-
-/*html, body {
-	min-height: 100%;
-}
-body {
-	min-height: 100%;
-  	display: flex;
-  	flex-direction: column;
-}
-.test {
-	flex: 1;
-}*/
 
 html {
   position: relative;
@@ -346,10 +295,6 @@ body {
   flex-direction: column;
 }
 
-.footer-section p {
-	/*padding-top: 50px;*/
-}
-
 .fa-facebook-official {
 	margin-bottom: 10px;
 	transition: all .3s ease-in-out;
@@ -361,14 +306,9 @@ body {
 
 .about-section {
 	margin-bottom: 200px;
-	/*box-shadow: 0 0 8px rgba(76, 79, 82, 0.6);*/
 	background-color: rgba(0,0,0,.2);
 	margin-top: 50px;
 }
-
-/*.members-section .section-heading {
-	margin-bottom: 150px;
-}*/
 
 .images-media {
 	margin-top: 15%; 
@@ -393,47 +333,41 @@ p {
 	}
 
 	#members {
-		/*align-content: center;
-		list-style-type: none;
-		margin: 0;
-		padding: 0;
-		text-align: center;*/
 		display: flex;
+		/*display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;*/
 		justify-content: center;
 		flex-wrap: wrap;
-		/*background-color: #131313;*/
 		background-color: #111;
-		/*padding-right: 20px;
-		padding-left: 20px;*/
 		margin-right: auto;
 		margin-left: auto;
 		padding-bottom: 60px;
+		/*height: 100%;*/
+	
+	}
+
+	@supports (-ms-ime-align:auto) {
+		#members {
+			display: list-item;
+		}
 	}
 
 	.member-card img {
-		/*flex-shrink: 0;
-   		max-width: 100%;*/
 		background-color: #662D91;
 	}
 
 
 	.member-card {
-		/*display: inline-block;
 		position: relative;
-		width: 45%;*/
-		/*height: 40%;*/
-		/*height: 0;*/
-		position: relative;
-		display: inline-block;
+		/*display: inline-block;*/
 		/*fix lazy load image size loading*/
-		height: 0;
+		/*height: 0;*/
 		padding-bottom: 61%;
-	
-		/*margin: 5px;*/
 		transform: translateY(20px);
 		-webkit-transform: translateY(20px);
 		-o-transform: translateY(20px);
-		/*opacity: 0;*/
 		transition: all .5s ease-in-out;
 		-webkit-transition: all .5s ease-in-out;
 		-o-transition: all .5s ease-in-out;
@@ -443,56 +377,30 @@ p {
 		align-items: center;
 		z-index: 0;
 		width: 46%;
-		/*height: 100%;*/
 		margin-bottom: 20px;
 		margin-left: 5px;
 		margin-right: 5px;
 		font-family: 'Oswald';
-		
 		font-weight: 300;
+		display: inline-block;
 	}
 
 
 
 	.member-card img {
-		/*width: 100%;
-		height: 100%;*/
 		transition: all .25s ease-in-out;
 		-webkit-transition: all .25s ease-in-out;
 		-o-transition: all .25s ease-in-out;
-		   position: absolute;
+		position: absolute;
 		top: 0;
 		left: 0;
 		width: 100%;
 		height: 100%; 
 	}
 
-	/*.member-img:hover {
-		opacity: .5;
-	}*/
-
-	 /*.member-card:click .member-name {
-		display: block;
-	}
-
-	 .member-card:click .member-description {
-		display: block;
-	}
-
-     .member-card:click img{
-
-		opacity: .5;
-		
-	}
-	.member-card:click p {
-		opacity: 1;
-	}	*/
+	
 	.member-card:hover img, .member-card:focus img {
-		/*-webkit-filter: grayscale(1);
-    	filter: grayscale(1);
-		filter: gray;*/
 		opacity: .5;
-		
 	}
 
 
@@ -518,8 +426,6 @@ p {
 	}
 
 	.member-name {
-		/*background: rgba(0,0,0,0.3);*/
-		
 		color: white;
 		padding-left: 10px;
 		padding-right: 10px;
@@ -541,14 +447,6 @@ p {
 		letter-spacing: 2px;
 		line-height: 1.2;
 		text-transform: uppercase;
-		    /*position:absolute;
-			top:0;
-			width:0;
-			width:100%;
-			height:100%;
-			background-color:rgba(0, 0, 0, 0.3);
-			display:none;*/
-
 	}
 
 	.member-description {
@@ -581,22 +479,6 @@ p {
 		justify-content: center;
 		align-items: center;
 	}
-
-
-	
-
-	.member-position {
-		/*font-size: 15px;
-		color: white;*/
-	}
-
-	/*.member-description {
-		display: none;
-	}*/
-
-
-
-
 
 /*RETURN TO TOP*/
 #return-to-top {
@@ -660,8 +542,6 @@ p {
 	background-color: #FFF;
 	color: black;
 	padding-bottom: 130px;
-	/*display: flex;
-	justify-content: center;*/
 }
 
 .contact-section p {
@@ -685,8 +565,6 @@ p {
 	display: flex;
 	align-content: center;
 	justify-content: center;
-	/*background-color: #131313;*/
-
 }
 
 .form-control {
@@ -694,7 +572,6 @@ p {
 	background-color: #333;
 	font-family: 'Oswald';
 	letter-spacing: 2px;
-	/*padding-right: 5px;*/
 }
 
 .form-control:focus {
@@ -738,44 +615,6 @@ p {
 	width: 100%;
 }
 
-/*.edge--top {
-  position: relative;
-  z-index: 1;
-}
-.edge--top:before {
-  background: inherit;
-  content: '';
-  display: block;
-  height: 50%;
-  left: 0;
-  position: absolute;
-  right: 0;
-  z-index: -1;
-  -webkit-backface-visibility: hidden;
-}
-.edge--top:before {
-  top: 0;
-  -webkit-transform: skewY(20deg);
-          transform: skewY(20deg);
-  -webkit-transform-origin: 100% 0;
-          transform-origin: 100% 0;
-}
-
-.block {
-  color: #fff;
-  font-family: 'Fira Sans', sans-serif;
-
-  padding-bottom: 20px;
-  text-align: center;
-  margin-top: 30%;
-  max-height: 2500px;
-
-}
-
-.-berry {
-  background: #b52b4a;
-}
-*/
 @media (min-width: 300px) {
 	.member-name {
 		font-size: 24px;
@@ -784,12 +623,9 @@ p {
 
 @media (min-width: 360px) {
 	.member-description {
-		/*padding-top: 85%;*/
 		font-size: 18px;
-		
 	}
 
-	
 	.member-name {
 		font-size: 30px;
 	}
@@ -841,42 +677,26 @@ p {
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 769px) { 
-	
-
-
-
 	header {
 		background-image: url("../img/background2.png");
 		background-attachment: fixed;
 	}
 
 	.block {
-	background-image: url("../img/test2.svg");
-	
-	/*height: 100%;
-	width: 100%;*/
+	background-image: url("../img/purple slash box.svg");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 100% 100%;
-	/*-webkit-background-size: 100% 100%;*/
 	padding-bottom: 100px;
 }
 	/*PARALLAX HEADER*/
-	.navbar-default {
-		/*overflow: hidden;
-		background-attachment: fixed;*/
-	}
 
 	nav ul li {
 		display: inline-block;
-		list-style-type: none;
-		/*padding: 20px 15px;*/
-		/*color: #662D91;*/
-		
+		list-style-type: none;	
 	}
 
 	.navbar {
-		/*min-height: 200px;*/
 		border: 0px;
 		position:fixed;
   		z-index:100000 !important;
@@ -885,10 +705,7 @@ p {
 	.navbar-nav {
 		padding-top: 10px;
 		padding-bottom: 10px;
-		/*padding-right: 30px;
-		margin-left: 20px;*/
 		font-size: 20px;
-		
 		display: block;
 		position:fixed;
   		z-index:100000 !important;
@@ -898,11 +715,6 @@ p {
 		justify-content: center;
 		transition: all ease .5s;
 		top: 0;
-	}
-
-	.nav-main {
-		/*height: 500px;*/
-		/*height: 100vh;*/
 	}
 
 	.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
@@ -934,17 +746,11 @@ p {
 /*HBC LOGO*/
 	.hbc-logo {
 		width: 50%;
-		/*height: auto;
-		margin: 0 auto;*/
-    	/*padding: 10px;*/
-    	/*position: relative;
-		margin-top: 5%;*/
 		padding-bottom: 0;
 	}
 
 	.hbc-logo img {
 		max-height: 20em;
-		/*float: left;*/
 	}
 
 	.husky-logo {
@@ -1007,64 +813,30 @@ p {
 		margin-left: auto;
 		margin-right: auto;
 		max-width: 1100px;
-		/*display: flex;
-		justify-content: center;*/
 	}
 
 /*CHANGE VIDEO SIZE HERE*/
 	.video-container {
 		max-width: 700px;
 		margin: auto;
-		/*margin-left: 10%;
-		margin-right: 10%;*/
-		/*display: flex;
-		justify-content: center;*/
-		
 	}
 
 	.video-section {
-		/*max-width: 700px;
-		height: auto;*/
-		/*margin: auto 0;*/
-		/*margin: 0;*/
-		/*margin-bottom: 250px;*/
 		position: relative;
 		z-index: 0;
 	}
 
-	.club-mission {
-		/*margin-top: 100px;
-		margin-bottom: 40px;*/
-	}
+
 
 /*MEMBERS PAGE*/
-	.members-main {
-		/*margin: auto;
-		align-content: center;
-		max-width: 1000px;
-		position: relative;
-		z-index: 0;*/
-	}
 
 	.members-section {
-		/*margin-bottom: 100px;*/
-		/*position: absolute;*/
-		/*top: 100px;*/
 		top: 30%;
 	}
 
-	#members {
-		/*align-content: center;
-		list-style-type: none;
-		margin: 0;
-		padding: 0;
-		text-align: center;*/
-	
-		
+	#members {		
 		padding-top: 35px;
 		padding-bottom: 35px;
-		/*padding-left: 30px;
-		padding-right: 30px;*/
 		max-width: 1000px;
 		padding-right: 20px;
 		padding-left: 20px;
@@ -1072,63 +844,17 @@ p {
 	}
 	
 	.member-card {
-		/*width: 99%;
-		height: auto;*/
-		/*display: flex, inline-block;*/
 		width: 30%;
 		margin-left: 10px;
 		margin-right: 10px;
 		padding-bottom: 40.5%;
-		/*height: 100%;*/
 	}
-
-	.member-card img {
-		/*flex-shrink: 0;
-   		max-width: 100%;*/
-    	/*max-height: 100%;*/
-		
-	
-		/*height: auto;*/
-		/*padding-left: 7%;
-		padding-right: 7%;*/
-	}
-	.member-card {
-		/*display: inline-block;*/
-	
-		/*width: 275px;
-		height: 275px;
-		margin: 10px;
-		position: relative;
-		z-index: 0;
-		padding-bottom: 0;*/
-	}
-
-
-
-	/*.member-name {
-		background: rgba(255,255,255,0.9);
-		color: black;
-		display: table;
-		height: 275px;
-		left: 0;
-		position: absolute;
-		top: 0;
-		width: 275px;
-		opacity: 0;
-		-webkit-transition: opacity 500ms;
-		-moz-transition: opacity 500ms;
-		-o-transition: opacity 500ms;
-		transition: opacity 500ms;
-	}*/
 
 	.member-description {
-		
-		
 		font-size: 25px;
 		padding-top: 85%;
 		padding-bottom: 10%;
 		letter-spacing: 1px;
-		/*text-transform: lowercase;*/
 	}
 
 
@@ -1142,19 +868,6 @@ p {
 		font-size: 58px;
 	}
 
-	.member-position {
-		/*font-size: 15px;*/
-		/*color: grey;*/
-	}
-
-	.member-description {
-		/*padding-top: 110px;
-		padding-left: 5px;
-		padding-right: 5px;*/
-	}
-
-
-
 /*CONTACT FORM	*/
 	.contact-form {
 		align-content: center;
@@ -1162,10 +875,6 @@ p {
 
 	.contact-section {
 		padding-bottom: 170px;
-		/*margin-left: auto;
-		margin-right: auto;
-		max-width: 1100px;*/
-		
 	}
 
 	.contact-section .club-mission {
@@ -1178,28 +887,13 @@ p {
 		width: 100%;
 	}
 
-	.name-last {
-		/*display:inline-block;
-		width: 190px;
-		align-self: baseline;*/
-	}
-
-	#form-message {
-		
-	}
-
 	.mail-message {
 		display:inline-block;
-	}
-
-	.form-control {
-		/*padding-right: 10px;*/
 	}
 
 	.form-horizontal {
 		margin-right: auto;
 		margin-left: auto;
-		
 		max-width: 700px;
 	}
 
@@ -1214,9 +908,6 @@ p {
 }
 
 .arrow-down {
-	/*color: white;*/
-	/*background-color: white;*/
-	
 	position: relative;
 	bottom: 15%;
 	z-index: 50;
@@ -1247,31 +938,12 @@ p {
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {  
 
-/*MAIN PAGE MIDDLE SECTION*/
-	main {
-		/*margin-left: 20%;
-		margin-right: 20%;*/
-	}
-
-/*HBC LOGO*/
-	.hbc-logo {
-		/*width: 50%;
-		height: auto;
-		margin: 0 auto;*/
-    	/*padding: 10px;*/
-    	/*position: relative;
-		margin-top: 5%;*/
-		
-	}
-
 	.hbc-logo img {
 		max-height: 25em;
-		/*float: left;*/
 	}
 
 	.hbc-logo .hbc-text {
 		margin-top: 0px;
-		/*text-align: right;*/
 		font-size: 3em;
 		text-align: center;
 	}
@@ -1285,11 +957,6 @@ p {
 		font-size: 1.5em;
 	}
 
-	.hbc-logo {
-		/*width: 70%;
-		margin-top: 27%;
-		*/
-	}
 
 	.hbc-logo img {
 		max-height: 25em;
@@ -1301,14 +968,8 @@ p {
 @media (min-height: 1500px) {  
 	.footer-section {
 		position: absolute;
-		/*bottom: none;*/
 	}
 
-
-
-	/*footer {
-		position: absolute;
-	}*/
 }
 
 @media (min-width: 1500px) { 
@@ -1316,19 +977,4 @@ p {
 	.hbc-logo img {
 		max-height: 30em;
 	}
-	/*.edge--bottom:after {
-		height: 150%;
-	}
-
-	.edge--bottom2:after {
-		height: 25%;
-		bottom: 140%;
-		overflow: hidden;
-	}
-
-	
-
-	.block2 {
-		margin-bottom: -55%;
-	}*/
 }
