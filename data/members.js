@@ -15,5 +15,6 @@ var MEMBERS = [
     {"name": "Brandon Wong", "position": "Representative", "description": "Class of 2025", "picture": "img/members/brandon.jpg"},
     {"name": "Rey Matsunaga", "position": "", "description": "Class of 2020", "picture": "img/members/rey.jpg"},
     {"name": "Loc Tran", "position": "", "description": "Class of 2018", "picture": "img/members/loc.jpg"},
-    {"name": "Lester Koh", "position": "", "description": "Class of 2019", "picture": "img/members/lester.jpg"}
+    {"name": "Lester Koh", "position": "", "description": "Class of 2019", "picture": "img/members/lester.jpg"},
+    {"name": "Gavin Cai", "position": "", "description": "Class of 2019", "picture": "img/members/gavin.jpg"}
 ]
