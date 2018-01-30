@@ -1,3 +1,3 @@
-# HBC Website
+# Husky Break
 
-A simple one page website for a RSO at the University of Washington: Husky Break Club.
+Husky Break is a student organization at the University of Washington. 
